@@ -47,15 +47,17 @@ main .controls {
   gap: 82px;
 }
 
-.hue, .brightness, .contrast {
+.hue,
+.brightness,
+.contrast {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.hue>div,
-.brightness>div,
-.contrast>div {
+.hue > div,
+.brightness > div,
+.contrast > div {
   display: flex;
   align-items: center;
   height: 5px;
@@ -63,8 +65,9 @@ main .controls {
   background-color: #fff;
 }
 
-.hue>div {
-  background: linear-gradient(to right,
+.hue > div {
+  background: linear-gradient(
+    to right,
     red,
     yellow,
     lime,
@@ -75,16 +78,16 @@ main .controls {
   );
 }
 
-input[type="range"] {
+input[type='range'] {
   width: 281px;
   height: 5px;
   appearance: none;
   background-color: transparent;
 }
 
-.hue>div>input[type="range"]::-webkit-slider-thumb,
-.brightness>div>input[type="range"]::-webkit-slider-thumb,
-.contrast>div>input[type="range"]::-webkit-slider-thumb {
+.hue > div > input[type='range']::-webkit-slider-thumb,
+.brightness > div > input[type='range']::-webkit-slider-thumb,
+.contrast > div > input[type='range']::-webkit-slider-thumb {
   width: 18px;
   height: 18px;
   border: 3px solid #fff;
@@ -96,8 +99,8 @@ input[type="range"] {
   align-items: center;
 }
 
-.brightness>div>input[type="range"]::-webkit-slider-thumb,
-.contrast>div>input[type="range"]::-webkit-slider-thumb { 
+.brightness > div > input[type='range']::-webkit-slider-thumb,
+.contrast > div > input[type='range']::-webkit-slider-thumb {
   background-color: #151515;
 }
 
