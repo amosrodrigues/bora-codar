@@ -12,7 +12,6 @@
     <title>Player de VR | #boraCodar 25</title>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="./main.js" defer></script>
   </head>
   <body>
     <div id="app">
@@ -43,14 +42,8 @@
         <ion-icon name="search-outline"></ion-icon>
       </aside>
       <main class="screen">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/KT1PDX31qo8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        <div id="video"></div>
+        <div id="ambient-light"></div>
       </main>
       <footer class="interaction">
         <div class="elipse"></div>
@@ -66,5 +59,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="https://unpkg.com/akar-icons-fonts"></script>
+
+    <script src="./main.js"></script>
   </body>
 </html>
